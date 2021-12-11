@@ -1,1 +1,23 @@
-adwads
+body{
+    background-image:url(./img/pirin.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bear{
+    position: absolute;
+    right: 0px;
+    width: 20%;
+    top: 50%;
+}
+.bear img{
+    width: 100%;
+}
+.lion{
+    position: absolute;
+    left: 46%;
+    top: 52%;
+    width: 3%;
+}
+.lion img{
+    width: 100%;
+}
