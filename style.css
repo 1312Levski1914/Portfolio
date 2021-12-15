@@ -1,6 +1,148 @@
+:root{
+  --primary-h1 : #1E3888;
+  --h3 : #1D1A05;
+  --background: #DAFFED;
+  --button : #2B9720;
+  --script : #81726A;
+}
+h5{
+  font-size: 20px;
+  color: var(--button);
+}
+h3{
+  font-size: 26px;
+  color: var(--h3);
+}
+h1{
+  font-size: 36px;
+  color: var(--primary-h1);
+}
+p{
+  font-size: 22px;
+  margin: 2px;
+  color: var(--script);
+  font-family: 'Corinthia', cursive;
+}
+.oneTab{margin-left: 15px;}
+.twoTab{margin-left: 30px;}
+.threTab{margin-left: 45px;}
+.fourTab{margin-left:60px}
+.fiveTab{margin-left:75px}
+.sixTab{margin-left:90px}
+.sevenTab{margin-left:105px}
+.eightTab{margin-left:120px}
+.nineTab{margin-left:135px}
+body{
+  background-color: var(--background);
+  margin: 0px;
+  margin-top: 140px;
+}
+#webSources{
+  display: none;
+}
+
+#mobileNav{
+  background-color: var(--primary-h1);
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  top: 0px;
+}
+nav img{
+  width: 10%;
+}
+.mode, .sound{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+}
+#checkbox{
+  width: 10px;
+}
+.bar1, .bar2, .bar3{
+  width: 30px;
+  background-color: var(--h3);
+  margin: 6px 0;
+  transition: 0.4s;
+  padding: 2px;
+  border-radius: 20px;
+}
+#burger-button{
+  font-size: 16px;
+  padding: 5px;
+  margin-right: 20px;
+}
+.change .bar1{
+  -webkit-transform: rotate(-45deg) translate(10px, 8px);
+  transform: rotate(-45deg) translate(-6px,6px);
+}
+.change .bar2{ opacity: 0;}
+.change .bar3{
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.dropBurger{
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+.dropDownContent{
+  display: none;
+  min-width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 33px 44px 0px rgba(0, 0,0,0.2);
+  z-index: 1;
+  background-color: var(--background);
+  text-align: center;
+}
+.dropDownContent a{
+  color: var(--primary-h1);
+  padding: 26px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+#myDropDown{
+  position: fixed;
+  right: 0;
+  top: 70px;
+}
+.show{display: block;}
+
+/*  Here start main for mobile  */
+.home{
+  display: flex;
+  flex-direction: column; 
+}
+.skillsRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.show-skill{
+  display: flex;
+  flex-direction: column;
+}
+.show-skill h5{
+  text-align: center;
+}
+
+@media(min-width:600px){
+#webSources{
+  display: block;
+}
+
 body{
     background-image:url(./img/pirin.jpg);
-    background-size: 100%;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
 }
 .bear{
@@ -78,4 +220,15 @@ body{
   .eagle-say:hover{
       opacity: 1;
   }
-  
+  .deer-say::before{
+    bottom: 20px; left: 30px;
+    width: 0; height: 10%;
+
+  }
+  .deer-say{
+    bottom: 100px;
+  }
+  .bear-say{
+    bottom: 100px;
+  }
+}
