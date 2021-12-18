@@ -53,9 +53,9 @@ p{
 .twoTab{
   margin-left: 30px;
   animation-duration: 2s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
   animation-delay: 0s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 0;
   animation-name: slideInRight;
   
 }
@@ -66,7 +66,7 @@ p{
 .threTab{
   margin-left: 45px;
   animation-duration: 2s;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
         animation-delay: 0s;
         animation-iteration-count: 1;
         animation-name: slideInLeft;
@@ -108,7 +108,9 @@ body{
 #webSources{
   display: none;
 }
-
+nav{
+  width: 100%;
+}
 #mobileNav{
   background-color: var(--primary-h1);
   z-index: 1;
@@ -119,6 +121,7 @@ body{
   padding: 15px;
   position: fixed;
   top: 0px;
+  
 }
 nav img{
   width: 10%;
@@ -197,15 +200,26 @@ nav img{
 .show-skill{
   display: flex;
   flex-direction: column;
+  display: none;
 }
 .show-skill h5{
   text-align: center;
 }
+.hide{
+  display: none;
+}
 .rate{
  background-color: var(--button);
- width: 25%;
- height: 30%;
+ width: 20px;
+ height: 20px;
  border-radius: 25px;
+}
+.unRate{
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  border: 1px solid var(--h3);
 }
 .myButton {
 	box-shadow: 3px 4px 0px 0px var(--primary-h1);
@@ -236,15 +250,15 @@ nav img{
 }
 .images{
  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  gap: 80px;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .images img{
-  width: 350px;
+  width: 35%;
   margin: auto;
   
 }
+
 /* Here start Contact form! i am going to use https://codepen.io/wwwebneko/pen/RRQKzZ this form */
 .form-style-4{
 	width: 80%;
@@ -318,103 +332,82 @@ nav img{
 .form-style-4 input[type=button]:hover{
 background: #394D61;
 }
+.containerForText{
+  display: none;
+}
 @media(min-width:600px){
-#mobileFirst{
-display: none;
-}
-#webSources{
-  display: block;
-}
+  #mobileNav{
+    display: none;
+  }
+  #mobileFirst{
+  display: none;
+  }
+  #webSources{
+    display: block;
+  }
 
-body{
-    background-image:url(./img/pirin.jpg);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-}
-.bear{
+  body{
+      background-image:url(./img/pirin.jpg);
+      background-size: 100vw 100vh;
+      background-repeat: no-repeat;
+  }
+  .bear{
+      position: absolute;
+      right: 0px;
+      width: 20%;
+      top: 50%;
+  }
+  .bear img{
+      width: 100%;
+  }
+  .lion{
+      position: absolute;
+      left: 46%;
+      top: 52%;
+      width: 3%;
+  }
+  .lion img{
+      width: 100%;
+  }
+  .deer{
+      position: absolute;
+      top: 60%;
+      left: 10%;
+  }
+  .eagle{
+      position: absolute;
+      width: 5%;
+  }
+  .eagle img{
+      width: 100%;
+  }
+ 
+  
+  .containerForText:hover .overlay{
+    opacity: 1;
+  }
+  .overlay{
     position: absolute;
-    right: 0px;
-    width: 20%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--script);
+    padding: 20px;
+  }
+  .text{
+    color: var(--background);
+    font-size:20px;
+    position: absolute;
     top: 50%;
-}
-.bear img{
-    width: 100%;
-}
-.lion{
-    position: absolute;
-    left: 46%;
-    top: 52%;
-    width: 3%;
-}
-.lion img{
-    width: 100%;
-}
-.deer{
-    position: absolute;
-    top: 60%;
-    left: 10%;
-}
-.eagle{
-    position: absolute;
-    width: 5%;
-}
-.eagle img{
-    width: 100%;
-}
-.speech-bubble {
-    position: relative;
-    margin: .5em auto;
-    padding: 1em;
-    width: 10em; height: 4em;
-    border-radius: .25em;
-    transform: rotate(-4deg) rotateY(15deg);
-    background: #629bdd;
-    font: 2em/4 Century Gothic, Verdana, sans-serif;
-    text-align: center;
-  }
-  .speech-bubble:before, .speech-bubble:after {
-    position: absolute;
-    z-index: -1;
-    content: '';
-  }
-  .speech-bubble:after {
-    top: 0; right: 0; bottom: 0; left: 0;
-    border-radius: inherit;
-    transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
-    background: #f4fbfe;
-  }
-  .speech-bubble:before {
-    border: solid 0 transparent;
-    border-right: solid 3.5em #f4fbfe;
-    border-bottom: solid .25em #629bdd;
-    bottom: .25em; left: 1.25em;
-    width: 0; height: 1em;
-    transform: rotate(45deg) skewX(75deg);
-  }
-  .eagle-say{
-    position: relative;
-    left: 10%;
-    margin: 0px;
-    padding: 0px;
-    width: 140%;
-    opacity: 0.2;
-}
-  .eagle-say::before{
-    bottom: 80%; left: 1em;
-    width: 0; height: 10%;
-  }
-  .eagle-say:hover{
-      opacity: 1;
-  }
-  .deer-say::before{
-    bottom: 20px; left: 30px;
-    width: 0; height: 10%;
-
-  }
-  .deer-say{
-    bottom: 100px;
-  }
-  .bear-say{
-    bottom: 100px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform : translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align:center;
   }
 }

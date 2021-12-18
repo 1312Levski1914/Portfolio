@@ -42,3 +42,32 @@ myAudio.onplaying = function() {
 myAudio.onpause = function() {
   isPlaying = false;
 };
+
+function drop(){
+  let arr = document.getElementsByClassName('show-skill');
+  let arr1 = document.getElementsByClassName('hide');
+  let display;
+  for(let i = 0; i<arr.length; i++){
+    display= arr[i].style.display;
+    if(display !== 'block'){
+
+      arr[i].style.display = 'block';
+    }else{
+      arr[i].style.display = 'none';
+    }
+  }
+  for(i = 0 ; i<arr1.length ; i++){
+    display = arr1[i].style.display;
+    var arg = arr1[i];
+    console.log(arg);
+    
+  }
+  if(display !== 'block'){
+    arg.style.display = 'block';
+  }else{
+    arg.style.display = 'none';
+  }
+}
+function toTop(){
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}

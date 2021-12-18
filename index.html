@@ -23,7 +23,7 @@
     <body>
         <nav>
             <section id="mobileNav">
-                <img src="./img/Ak-logo.png" alt="logo-not-working">
+                <img onclick="toTop()"  src="./img/Ak-logo.png" alt="logo-not-working">
                 <div class="sound">
                     <audio id="myAudio" src="./portfolioBackgroundSound.m4a" preload="auto">
                     </audio>
@@ -43,7 +43,7 @@
                     <!-- Make when user click to scroll down!!!!-->
                     <a href="#skillsId">Skills</a>
                     <a href="#awardsId">Awards</a>
-                    <a href="#aboutMe">About Me</a>
+                    <a href="#Project">Projects</a>
                     <a href="#contactId">Contact Me</a>
                 </div>
             </section>
@@ -57,23 +57,23 @@
                 <h1 class = 'threTab'>Hi, <br> I'm Asen Krushkov</h1>
                 <p class = 'twoTab'>&lt;/h1&gt;</p>
                 <p class = 'twoTab'>&lt;h3&gt;</p>
-                <h3 class = 'threTab'>Front End Developer</h3>
+                <h3 class = 'threTab'>Front-End Developer</h3>
                 <p class = 'twoTab'>&lt;/h3&gt;</p>
                 <p class = 'twoTab'>&lt;button&gt;</p>
-                <a class = 'twoTab myButton' href="#">Get in touch!</a>
+                <a class = 'twoTab myButton' href="#contactId">Get in touch!</a>
                 <p class = 'twoTab'>&lt;/button&gt;</p>
             </section>
             <section id= 'skillsId' class="skills">
                 <div class="header-skills">
                     <p class = 'twoTab'>&lt;section&gt;</p>
                     <p class = 'threTab'>&lt;h1&gt;</p>
-                    <h1 class = 'fourTab'>Multidisciplinary Designer</h1>
+                    <h1 onclick = 'drop()'  class = ' fourTab'>Multidisciplinary Designer</h1>
                     <p class = 'threTab'>&lt;/h1&gt;</p>
                     <p class = 'threTab'>&lt;section&gt;</p>
                     <p class = 'fourTab'>&lt;div&gt;</p>
                 </div>
                 <div class="show-skill">
-                    <h5>Design -</h5>
+                    <h5>Design</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -92,7 +92,7 @@
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="show-skill">
                     <p class="fourTab">&lt;div&gt;</p>
-                    <h5>Ilustration -</h5>
+                    <h5 >Ilustration</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -114,11 +114,11 @@
                             <p>Intermediate</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="show-skill">
                     <p class="fourTab">&lt;div&gt;</p>
-                    <h5>Code - -</h5>
+                    <h5>Code</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -144,7 +144,7 @@
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="show-skill">
                     <p class="fourTab">&lt;div&gt;</p>
-                    <h5>Animation -</h5>
+                    <h5>Animation</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -166,11 +166,11 @@
                             <p>Intermediate</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -183,12 +183,12 @@
                 <div class="header-skills">
                     <p class="threTab">&lt;section&gt;</p>
                     <p class = 'fourTab'>&lt;h1&gt;</p>
-                    <h1 class = 'fourTab'>Scripting and Programing Language </h1>
+                    <h1 onclick = 'drop()' class = 'fourTab'>Scripting and Programming Language </h1>
                     <p class = 'fourTab'>&lt;/h1&gt;</p>
                     <p class= "fourTab">&lt;div&gt;</p>
                 </div>
                 <div class="show-skill">
-                    <h5 class= 'Skill'>HTML -</h5>
+                    <h5 class= 'Skill'>HTML</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -214,7 +214,7 @@
                 <p class= "fourTab">&lt;/div&gt;</p>
                 <div class="show-skill">
                     <p class= "fourTab">&lt;div&gt;</p>
-                    <h5>CSS -</h5>
+                    <h5>CSS</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -232,7 +232,7 @@
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -240,7 +240,7 @@
                 </div>
                 <div class="show-skill">
                     <p class= "fourTab">&lt;div&gt;</p>
-                    <h5>JS - -</h5>
+                    <h5>JS</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -258,7 +258,7 @@
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -270,12 +270,12 @@
                 <div class="header-skills">
                     <p class = 'threTab'>&lt;section&gt;</p>
                     <p class = 'fourTab'>&lt;h1&gt;</p>
-                    <h1 class = 'fourTab'>Graphic and Web Software </h1>
+                    <h1 onclick = 'drop()' class = 'fourTab'>Graphic and Web Software </h1>
                     <p class = 'fourTab'>&lt;/h1&gt;</p>
                     <p class= "fourTab">&lt;div&gt;</p>
                 </div>
                 <div class="show-skill">
-                    <h5>Photoshop  -</h5>
+                    <h5>Photoshop</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -289,11 +289,11 @@
                             <p>Intermediate</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -301,7 +301,7 @@
                 </div>
                 <div class="show-skill">
                     <p class= "fourTab">&lt;div&gt;</p>
-                    <h5>Illustrator  -</h5>
+                    <h5>Illustrator</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -315,11 +315,11 @@
                             <p>Intermediate</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -327,7 +327,7 @@
                 </div>
                 <div class="show-skill">
                     <p class= "fourTab">&lt;div&gt;</p>
-                    <h5>Sketch - -</h5>
+                    <h5>Sketch</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -341,11 +341,11 @@
                             <p>Intermediate</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -353,7 +353,7 @@
                 </div>
                 <div class="show-skill">
                     <p class= "fourTab">&lt;div&gt;</p>
-                    <h5>XD - -</h5>
+                    <h5>XD</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -371,7 +371,7 @@
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -383,12 +383,12 @@
                 <div class="header-skills">
                     <p class = 'threTab'>&lt;section&gt;</p>
                     <p class = 'fourTab'>&lt;h1&gt;</p>
-                    <h1 class = 'fourTab'>Video,3d and Game Software</h1>
+                    <h1 onclick = 'drop()' class = 'fourTab'>Video,3d and Game Software</h1>
                     <p class = 'fourTab'>&lt;/h1&gt;</p>
                     <p class= "fourTab">&lt;div&gt;</p>
                 </div>
                 <div class="show-skill">
-                    <h5>After Effects -</h5>
+                    <h5>After Effects</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -402,11 +402,11 @@
                             <p>Intermediate</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -414,7 +414,7 @@
                 </div>
                 <div class="show-skill">
                     <p class= "fourTab">&lt;div&gt;</p>
-                    <h5>Primiere-Pro -</h5>
+                    <h5>Primiere-Pro</h5>
                     <div class= 'skillsRow'>
                         <div>
                             <div class= 'rate'></div>
@@ -428,11 +428,11 @@
                             <p>Intermediate</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Advanced</p>
                         </div>
                         <div>
-                            <input type="checkbox" name="" id="">
+                            <div class="unRate"></div>
                             <p>Expert</p>
                         </div>
                     </div>
@@ -444,9 +444,9 @@
             <section id= 'awardsId' class="certificate">
                 <p class="twoTab">&lt;section&gt;</p>
                 <p class="threTab">&lt;h1&gt;</p>
-                <h1 class="sevenTab">Certificate</h1>
+                <h1 onclick = 'drop()' class="sevenTab">Certificate</h1>
                 <p class="threTab">&lt;/h1&gt;</p>
-                <div>
+                <div class = 'hide'>
                     <p class="threTab">&lt;h3&gt;</p>
                     <h3 class="eightTab">Basic Skills</h3>
                     <p class="threTab">&lt;/h3&gt;</p>
@@ -456,7 +456,7 @@
                         <img src="./img/basic2.png" alt="">
                     </div>
                 </div>
-                <div>
+                <div class = 'hide'>
                     <p class="threTab">&lt;h3&gt;</p>
                     <h3>Fundamentals JavaScript</h3>
                     <p class="threTab">&lt;/h3&gt;</p>
@@ -474,7 +474,7 @@
                 <h1 class="eightTab">About Me</h1>
                 <p class="threTab">&lt;/h1&gt;</p>
                 <p class="threTab">&lt;h3&gt;</p>
-                <h3 class="eightTab">Live</h3>
+                <h3 class="eightTab">Life</h3>
                 <p class="threTab">&lt;/h3&gt; &lt;hr&gt;</p> <hr>
                 <p class="threTab">&lt;h5&gt;</p>
                 <h5 class='fourTab'>19 years in <span class= 'bold'> &lt;bold&gt;</span> <strong>Bulgaria</strong> <span class='bold'> &lt;/bold&gt; </span> </h5>
@@ -502,7 +502,7 @@
                 <p class="threTab">&lt;/h5&gt;</p>
                 <p class="twoTab">&lt;/section&gt;</p>
             </section>
-            <section class="projects">
+            <section id="Project" class="projects">
                 <p class="twoTab">&lt;section&gt;</p>
                 <p class="threTab">&lt;h1&gt;</p>
                 <h1 class="eightTab">Projects</h1>
@@ -545,7 +545,7 @@
                 <span>Message to Me</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
                 </label>
                 <label>
-                <span> </span><input type="submit" value="Send Letter" />
+                <span> </span><input type="submit" value="Send" />
                 </label>
                 </form>
             </section>
@@ -555,27 +555,32 @@
             <p>&lt;/body&gt;</p>
             <p>&lt;/html&gt;</p>
         </section>
-        <section id="webSources">
-            <section class= 'bear'>
+        <section id="webSources ">
+            <section class= 'bear containerForText'>
                 <img src="./img/bear-21609.png" alt="bear is missing!!!!" >
-                <div class='speech-bubble bear-say'>Hello!</div>
+                <div class="overlay">
+                    <div class="text">Skills</div>
+                </div>
             </section>
-            <section class="lion">
+            <section class="lion containerForText">
                 <img src="./img/lion.png" alt="Lion is missing">
-                <div class='speech-bubble lion-say'>Hello!</div>
+                <div class="overlay">
+                    <div class="text">About Me</div>
+                </div>
             </section>
-            <section class="deer">
+            <section class="deer containerForText">
                 <img src="./img/Deer-Download-PNG.png" alt="deer is mission">
-                <div class='speech-bubble deer-say'>Hello!</div>
+                <div class="overlay">
+                    <div class="text">Contact Me</div>
+                </div>
             </section>
-            <section class="eagle">
+            <section class="eagle containerForText">
                 <img src="./img/Bald-Eagle-Transparent.png" alt="eagle missing">
-                <div class='speech-bubble eagle-say'>Certificate</div>
+                <div class="overlay">
+                    <div class="text">Certificate</div>
+                </div>
             </section>
         </section>
-        <footer>
-
-        </footer>
         </main>
         <script src="./javaScript.js"></script>
     </body>
