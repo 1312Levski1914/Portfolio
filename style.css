@@ -52,39 +52,100 @@ p{
 }
 .twoTab{
   margin-left: 30px;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-delay: 0s;
-  animation-iteration-count: 0;
-  animation-name: slideInRight;
-  
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
 }
-@keyframes slideInRight{
+@keyframes slideInLeft{
   0%{transform: translateX(100%)}
   100%{transform: translateX(0);}
 }
 .threTab{
   margin-left: 45px;
   animation-duration: 2s;
-        animation-timing-function: ease-in;
-        animation-delay: 0s;
-        animation-iteration-count: 1;
-        animation-name: slideInLeft;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInRight;
+}
+@keyframes slideInRight{
+	0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+.fourTab{
+  margin-left:60px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
 }
 @keyframes slideInLeft{
-	0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
+	0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
 }
-.fourTab{margin-left:60px}
-.fiveTab{margin-left:75px}
-.sixTab{margin-left:90px}
-.sevenTab{margin-left:105px}
-.eightTab{margin-left:120px}
-.nineTab{margin-left:135px}
+.fiveTab{
+  margin-left:75px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInRight;
+}
+@keyframes slideInRight{
+	0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+.sixTab{
+  margin-left:90px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+}
+@keyframes slideInLeft{
+	0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+.sevenTab{
+  margin-left:105px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInRight;
+}
+@keyframes slideInRight{
+	0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+.eightTab{
+  margin-left:120px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+}
+@keyframes slideInLeft{
+	0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+.nineTab{
+  margin-left:135px;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInRight;
+}
+@keyframes slideInRight{
+	0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
 body{
   background-color: var(--background);
   margin: 0px;
@@ -101,7 +162,6 @@ body{
   color: var(--script);
 }
 .contact{
-
   padding-right: 30px;
   font-size: 18px;
 }
@@ -121,6 +181,7 @@ nav{
   padding: 15px;
   position: fixed;
   top: 0px;
+  width: 100%;
   
 }
 nav img{
@@ -195,17 +256,21 @@ nav img{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 10px;
+  margin: 15px;
 }
 .show-skill{
   display: flex;
   flex-direction: column;
   display: none;
+  margin: 10px;
 }
 .show-skill h5{
   text-align: center;
 }
 .hide{
+  display: none;
+}
+.hide1{
   display: none;
 }
 .rate{
@@ -243,10 +308,6 @@ nav img{
 .myButton:hover {
 	background:linear-gradient(to bottom, #11e470 5%, #035030 100%);
 	background-color:#0e33d4;
-}
-.myButton:active {
-	position:absolute;
-	top:1px;
 }
 .images{
  display: flex;
@@ -345,34 +406,64 @@ background: #394D61;
   #webSources{
     display: block;
   }
-
+  .containerForText{
+    display: block;
+  }
   body{
       background-image:url(./img/pirin.jpg);
       background-size: 100vw 100vh;
       background-repeat: no-repeat;
   }
   .bear{
-      position: absolute;
-      right: 0px;
-      width: 20%;
-      top: 50%;
+    width: 300px;
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
   }
   .bear img{
       width: 100%;
   }
+  #bearID img{
+    width: 300px;
+    position: absolute;
+    right: 300px;
+    bottom: 40px;
+  }
+  .bearShowSskills{
+    display: none;
+    width: 70%;
+    background-color: white;
+   z-index: 10;
+   margin-left: 15px;
+  }
+  .lionNav{
+    position: absolute;
+    right: 100px;
+    top: 130px;
+  }
+  #LION img{
+    width: 200px;
+  }
+  .allSkills{
+    overflow-y: scroll;
+    max-height: 500px;
+  }
   .lion{
-      position: absolute;
-      left: 46%;
-      top: 52%;
-      width: 3%;
+    position: absolute;
+    left: 46%;
+    top: 55%;
+    width: 3%;
   }
   .lion img{
-      width: 100%;
+    width: 100%;
   }
   .deer{
-      position: absolute;
-      top: 60%;
-      left: 10%;
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+  }
+  deer img{
+    width: 100%;
   }
   .eagle{
       position: absolute;
