@@ -190,9 +190,58 @@ function showWork(){
     }
   }
 }
+function showCertificate(){
+  let arr = document.getElementsByClassName('showCertificateOnWeb');
+  let lion = document.getElementById('LION');
+  let bear  = document.getElementById('bearID');
+  let eagle = document.getElementById('eagleID');
+  let deer = document.getElementById('deerImgId');
+  let display; 
+  for(let i = 0 ; i<arr.length ; i++){
+    display = arr[i].style.display;
+    if(display !== 'block'){
+      arr[i].style.display = 'block';
+      bear.style.display = 'none';
+      lion.style.display = 'none';
+      eagle.className = 'activeEagle'
+      deer.style.display = 'none';
+    }else{
+      arr[i].style.display = 'none';
+      bear.style.display = 'block';
+      lion.style.display = 'block';
+      eagle.className = 'eagle';
+      deer.style.display = 'block';
+    }
+  }
+}
+function showContactMe(){
+  let arr = document.getElementsByClassName('deerContactMe');
+  let lion = document.getElementById('LION');
+  let bear  = document.getElementById('bearID');
+  let eagle = document.getElementById('eagleID');
+  let deer = document.getElementById('deerImgId');
+  let display; 
+  for(let i = 0 ; i<arr.length ; i++){
+    display = arr[i].style.display;
+    if(display !== 'block'){
+      arr[i].style.display = 'block';
+      bear.style.display = 'none';
+      lion.style.display = 'none';
+      eagle.style.display = 'none';
+      deer.className = 'activeDeer';
+    }else{
+      arr[i].style.display = 'none';
+      bear.style.display = 'block';
+      lion.style.display = 'block';
+      eagle.style.display = 'block';
+      deer.className = 'deer';
+    }
+  }
+}
 
 function showSkillsMenu(){
   let arr = document.getElementsByClassName('bearShowSskills');
+  let eagle = document.getElementById('eagleID');
   let display;
   for(let i = 0 ; i<arr.length ; i++){
     display = arr[i].style.display;
@@ -200,10 +249,39 @@ function showSkillsMenu(){
       arr[i].style.display = 'block';
       document.getElementById('LION').style.display = 'none';
       document.getElementById('deerID').style.display = 'none';
+      eagle.style.display = 'none';
     }else{
       arr[i].style.display = 'none';
-      document.getElementById('LION').className = 'lion';
+      document.getElementById('LION').style.display = 'block';
+      document.getElementById('deerID').style.display = 'block';
+      eagle.style.display= 'block';
     }
   }
-  
+}
+
+function showAboutMe(){
+  let arr = document.getElementsByClassName('lionAboutMe');
+  let lion = document.getElementById('LION');
+  let bear  = document.getElementById('bearID');
+  let eagle = document.getElementById('eagleID');
+  let deer = document.getElementById('deerImgId');
+  let display; 
+
+  for(let i = 0; i<arr.length ; i++){
+    display = arr[i].style.display;
+    if(display !== 'block'){
+      arr[i].style.display = 'block';
+      lion.className = 'openLion';
+      bear.style.display = 'none';
+      document.getElementById('deerID').style.display = 'none';
+      eagle.style.display = 'none';
+
+    }else{
+      arr[i].style.display = 'none';
+      lion.className = 'lion';
+      bear.style.display=  'block';
+      document.getElementById('deerID').style.display = 'block';
+      eagle.style.display = 'block';
+    }
+  }
 }

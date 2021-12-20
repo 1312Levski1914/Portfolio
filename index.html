@@ -44,7 +44,7 @@
                     <a href="#skillsId">Skills</a>
                     <a href="#awardsId">Awards</a>
                     <a href="#Project">Projects</a>
-                    <a href="#contactId">Contact Me</a>
+                    <a href="#contactIdSection">Contact Me</a>
                 </div>
             </section>
         </nav>
@@ -576,11 +576,9 @@
             <p>&lt;/html&gt;</p>
         </section>
         <section id="webSources ">
-            <section id= 'bearID'  class= 'bear containerForText' onclick="showSkillsMenu()">
+            <section id= 'bearID'  class= 'bear' onclick="showSkillsMenu()">
                 <img  src="./img/bear-21609.png" alt="bear is missing!!!!" >
-                <div class="overlay">
-                    <div class="text">Skills</div>
-                </div>
+
             </section>
             <section class="bearShowSskills">
                 <div class= 'allSkills'> 
@@ -963,23 +961,134 @@
                     </section>
                 </div>
             </section>
-            <section id='LION' class="lion containerForText">
-                <img src="./img/lion.png" alt="Lion is missing">
-                <div class="overlay">
-                    <div class="text">About Me</div>
-                </div>
+            <section onclick="showAboutMe()" id='LION' class="lion">
+                <img id="LionActive" src="./img/lion.png" alt="Lion is missing">
             </section>
-            <section id='deerID' class="deer containerForText">
-                <img src="./img/Deer-Download-PNG.png" alt="deer is mission">
-                <div class="overlay">
-                    <div class="text">Contact Me</div>
-                </div>
+            <section class="lionAboutMe">
+                <section id= 'aboutMe'>
+                    <p class="twoTab">&lt;section&gt;</p>
+                    <p class="threTab">&lt;h1&gt;</p>
+                    <h1 onclick = 'showAbout()' class="eightTab">About Me</h1>
+                    <p class="threTab">&lt;/h1&gt;</p>
+                    <div class="showAboutInfo">
+    
+                        <p class="threTab">&lt;h3&gt;</p>
+                        <h3 onclick= 'showLife()' class="eightTab">Life</h3>
+                        <p class="threTab">&lt;/h3&gt; &lt;hr&gt;</p> <hr>
+                        <div class="LifeSection">
+                            <p class="threTab">&lt;h5&gt;</p>
+                            <h5 class='fourTab'>19 years in <span class= 'bold'> &lt;bold&gt;</span> <strong>Bulgaria</strong> <span class='bold'> &lt;/bold&gt; </span> </h5>
+                            <p class="threTab">&lt;/h5&gt;</p>
+                            <p class="threTab">&lt;h5&gt;</p>
+                            <h5  class='fourTab'>4 years in<span class= 'bold'> &lt;bold&gt;</span> <strong>United Kingdom</strong> <span class='bold'> &lt;/bold&gt; </span> </h5>
+                            <p class="threTab">&lt;/h5&gt;</p>
+                            <p class="threTab">&lt;h5&gt;</p>
+                            <h5  class='fourTab'>2 years in <span class= 'bold'> &lt;bold&gt;</span> <strong>Denmark</strong> <span class='bold'> &lt;/bold&gt; </span></h5>
+                            <p class="threTab">&lt;/h5&gt;</p>
+                        </div>
+                    </div>
+                    <div class="showAboutInfo">
+                        <p class="threTab">&lt;h3&gt;</p>
+                        <h3 onclick= 'showWork()' class="eightTab">Work</h3>
+                        <p class="threTab">&lt;/h3&gt; &lt;hr&gt;</p> <hr>
+                        <div class="showWorkInfo hide">
+                            <p class="threTab">&lt;h5&gt;</p>
+                            <h5 class="eightTab">JustEat-Delivery Driver</h5>
+                            <p class="threTab">&lt;/h5&gt;</p>
+                        </div>
+                    </div>
+                    
+                    <div class="showAboutInfo">
+                        <p class="threTab">&lt;h3&gt;</p>
+                        <h3 onclick= 'showStudying()' class="eightTab">Studying</h3>
+                        <p class="threTab">&lt;/h3&gt; &lt;hr&gt;</p> <hr>
+                        <div class="showStudyingInfo">
+                            <p class="threTab">&lt;h5&gt;</p>
+                            <h5 class="eightTab">Zealand- Multimedia Design and Comunication</h5>
+                            <p class="threTab">&lt;/h5&gt;</p>
+                            <p class="threTab">&lt;h5&gt;</p>
+                            <h5 class="eightTab">SoftUni - JavaScript - Advance</h5>
+                            <p class="threTab">&lt;/h5&gt;</p>
+                            <p class="twoTab">&lt;/section&gt;</p>
+                        </div>
+                    </div>
+                    
+                </section>
             </section>
-            <section class="eagle containerForText">
-                <img src="./img/Bald-Eagle-Transparent.png" alt="eagle missing">
-                <div class="overlay">
-                    <div class="text">Certificate</div>
-                </div>
+            <section onclick="showContactMe()" id='deerID' class="deer">
+                <img id='deerImgId' src="./img/Deer-Download-PNG.png" alt="deer is mission">
+            </section>
+            <section class="deerContactMe">
+                <section id='contactIdSection' class="ContactMe">
+                    <p class="twoTab">&lt;section&gt;</p>
+                    <p class="threTab">&lt;h1&gt;</p>
+                    <h1 onclick = 'dropContact()' class="sevenTab">Contact Me</h1>
+                    <p class="threTab">&lt;/h1&gt;</p>
+                    <div class="hide dropContactInfo">
+    
+                        <p class="threTab">&lt;h3&gt;</p>
+                        <h3 class="fourTab contact">I'm Front-End Developer <span class="bold"> &lt;br&gt; </span><br>
+                            who enjoying working with  <span class="bold"> &lt;br&gt; </span> <br>
+                            JS HTML and CSS. <span class="bold"> &lt;br&gt; </span>  <br>
+                            However, if you have other request</span><br>
+                            or question, don't hesitate to use<br>
+                            the form bellow.  
+                        </h3>
+                        <p class="threTab"> &lt;/h3&gt;</p>
+                        
+                        <p class="threTab">&lt;form&gt;</p>
+                        <form class="form-style-4" action="" method="post">
+                            <label for="field1">
+                                <span>Enter Your Name</span><input type="text" name="field1" required="true" />
+                            </label>
+                            <label for="field2">
+                                <span>Email Address</span><input type="email" name="field2" required="true" />
+                            </label>
+                            <label for="field3">
+                                <span>Short Subject</span><input type="text" name="field3" required="true" />
+                            </label>
+                            <label for="field4">
+                                <span>Message to Me</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+                            </label>
+                            <label>
+                                <span> </span><input type="submit" value="Send" />
+                            </label>
+                        </form>
+                        <p class="threTab">&lt;/form&gt;</p>
+                    </div>
+                </section>
+            </section>
+            <section onclick = 'showCertificate()'id = 'eagleID' class="eagle">
+                <img id= 'eagleImgId' src="./img/Bald-Eagle-Transparent.png" alt="eagle missing">
+            </section>
+            <section class="showCertificateOnWeb">
+                <section id= 'awardsId' class="certificate">
+                    <p class="twoTab">&lt;section&gt;</p>
+                    <p class="threTab">&lt;h1&gt;</p>
+                    <h1 onclick = 'showCertificate()' class="sevenTab">Certificate</h1>
+                    <p class="threTab">&lt;/h1&gt;</p>
+                    <div class = 'certificateSkills'>
+                        <p class="threTab">&lt;h3&gt;</p>
+                        <h3 class="eightTab">Basic Skills</h3>
+                        <p class="threTab">&lt;/h3&gt;</p>
+                        <p class="threTab">&lt;img*2&gt;</p>
+                        <div class="certificate-img">
+                            <img src="./img/basic.png" alt="">
+                            <img src="./img/basic2.png" alt="">
+                        </div>
+                    </div>
+                    <div class = 'certificateSkills'>
+                        <p class="threTab">&lt;h3&gt;</p>
+                        <h3>Fundamentals JavaScript</h3>
+                        <p class="threTab">&lt;/h3&gt;</p>
+                        <p class="threTab">&lt;img*2&gt;</p>
+                        <div class="certificate-img">
+                            <img src="./img/JS funda.png" alt="">
+                            <img src="./img/curriculum.png" alt="">
+                        </div>
+                    </div>
+                    <p class="twoTab">&lt;/section&gt;</p>
+                </section>
             </section>
         </section>
         </main>

@@ -24,11 +24,13 @@ h3{
   font-size: 26px;
   color: var(--h3);
   font-family: 'Fuzzy Bubbles', cursive;
+  cursor: pointer;
 }
 h1{
   font-size: 36px;
   color: var(--primary-h1);
   font-family: 'Fuzzy Bubbles', cursive;
+  cursor: pointer;
 }
 p{
   font-size: 22px;
@@ -164,6 +166,9 @@ body{
 .contact{
   padding-right: 30px;
   font-size: 18px;
+}
+.bearShowSskills{
+  display: none;
 }
 #webSources{
   display: none;
@@ -400,6 +405,9 @@ background: #394D61;
   #mobileNav{
     display: none;
   }
+  .lionAboutMe{
+    display: none;
+  }
   #mobileFirst{
   display: none;
   }
@@ -414,48 +422,66 @@ background: #394D61;
       background-size: 100vw 100vh;
       background-repeat: no-repeat;
   }
-  .bear{
-    width: 300px;
-    position: absolute;
-    right: 40px;
-    bottom: 60px;
-  }
-  .bear img{
-      width: 100%;
-  }
   #bearID img{
-    width: 300px;
-    position: absolute;
-    right: 300px;
-    bottom: 40px;
+   width: 350px;
+   position: fixed;
+   right: 0px;
+   bottom: 110px;
   }
   .bearShowSskills{
     display: none;
     width: 70%;
-    background-color: white;
+    height: 500px;
+    background-color: var(--background);
    z-index: 10;
    margin-left: 15px;
   }
-  .lionNav{
-    position: absolute;
-    right: 100px;
-    top: 130px;
-  }
   #LION img{
-    width: 200px;
+    width: 100px;
   }
   .allSkills{
     overflow-y: scroll;
     max-height: 500px;
   }
+  .lionAboutMe{
+    display: none;
+    width: 70%;
+    height: 500px;
+    background-color: var(--background);
+    z-index: 10;
+    margin-left: 15px;
+    overflow-y: scroll;
+    max-height: 500px;
+  }
   .lion{
-    position: absolute;
+    position: fixed;
     left: 46%;
-    top: 55%;
+    top: 48%;
     width: 3%;
+  }
+  .openLion{
+    position: fixed;
+    right: 50px;
+    bottom: 120px;
+    
   }
   .lion img{
     width: 100%;
+  }
+  .deerContactMe{
+    display: none;
+    width: 70%;
+    height: 500px;
+    background-color: var(--background);
+    z-index: 10;
+    margin-left: 15px;
+    overflow-y: scroll;
+    max-height: 500px;
+  }
+  .activeDeer{
+    position: fixed;
+    right: 20px;
+    bottom: 120px;
   }
   .deer{
     position: absolute;
@@ -472,33 +498,19 @@ background: #394D61;
   .eagle img{
       width: 100%;
   }
- 
-  
-  .containerForText:hover .overlay{
-    opacity: 1;
-  }
-  .overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: var(--script);
-    padding: 20px;
-  }
-  .text{
-    color: var(--background);
-    font-size:20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform : translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    text-align:center;
-  }
+ .activeEagle{
+   position: fixed;
+   right: 0px;
+   top: 0px;
+ }
+ .showCertificateOnWeb{
+  display: none;
+  width: 70%;
+  height: 500px;
+  background-color: var(--background);
+  z-index: 10;
+  margin-left: 15px;
+  overflow-y: scroll;
+  max-height: 500px;
+ }
 }
