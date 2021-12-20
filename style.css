@@ -38,7 +38,18 @@ p{
   color: var(--script);
   font-family: 'Corinthia', cursive;
 }
-
+#eagleImgId{
+  display: none;
+}
+#deerImgId{
+  display: none;
+}
+#LionActive{
+  display: none;
+}
+#bearID{
+  display: none;
+}
 .oneTab{
   margin-left: 15px;
   animation-duration: 1s;
@@ -513,4 +524,16 @@ background: #394D61;
   overflow-y: scroll;
   max-height: 500px;
  }
+ #eagleImgId{
+  display: block;
+}
+#deerImgId{
+  display: block;
+}
+#LionActive{
+  display: block;
+}
+#bearID{
+  display: block;
+}
 }
