@@ -297,21 +297,25 @@ function showContactMe(){
   let display; 
   for(let i = 0 ; i<arr.length ; i++){
     display = arr[i].style.display;
-    if(display !== 'block'){
-      arr[i].style.display = 'block';
-      bear.style.display = 'none';
-      lion.style.display = 'none';
-      eagle.style.display = 'none';
-      deer.className = 'activeDeer';
-    }else{
+    if(screen.width < 600){
       arr[i].style.display = 'none';
-      bear.style.display = 'block';
-      lion.style.display = 'block';
-      eagle.style.display = 'block';
-      deer.className = 'deer';
+    }else{
+        if(display !== 'block'){
+          arr[i].style.display = 'block';
+          bear.style.display = 'none';
+          lion.style.display = 'none';
+          eagle.style.display = 'none';
+          deer.className = 'activeDeer';
+        }else{
+          arr[i].style.display = 'none';
+          bear.style.display = 'block';
+          lion.style.display = 'block';
+          eagle.style.display = 'block';
+          deer.className = 'deer';
+        }
+      }
     }
   }
-}
 const bearWrite = document.querySelector('.bearShowSskills');
 function showSkillsMenu(){
   bearWrite.innerHTML = `

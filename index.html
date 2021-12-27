@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html lang="en">
     <head>
     <!--Put a title,set up a img -->
         <title>Asen Krushkov</title>
@@ -28,11 +28,11 @@
                     <audio id="myAudio" src="./portfolioBackgroundSound.m4a" preload="auto">
                     </audio>
                     <p>sound</p>
-                    <input onClick="togglePlay()" type="checkbox" name="" id="checkbox">
+                    <input onClick="togglePlay()" type="checkbox"  id="checkbox">
                 </div>
                 <div class="mode">
                     <p>mode</p>
-                    <input type="checkbox" name="" onclick = 'darkMode()' id="checkbox">
+                    <input type="checkbox" onclick = 'darkMode()' id="checkboxId">
                 </div>
                 <div id="burger-button" class = 'dropBurger' onclick = 'openBurgerMenu()'>
                     <div class = 'bar1'></div>
@@ -453,8 +453,8 @@
                     <p class="threTab">&lt;/h3&gt;</p>
                     <p class="threTab">&lt;img*2&gt;</p>
                     <div class="certificate-img">
-                        <img src="./img/basic.png" alt="">
-                        <img src="./img/basic2.png" alt="">
+                        <img src="./img/basic.png" alt="basic">
+                        <img src="./img/basic2.png" alt="curriculum">
                     </div>
                 </div>
                 <div class = 'certificateSkills'>
@@ -463,8 +463,8 @@
                     <p class="threTab">&lt;/h3&gt;</p>
                     <p class="threTab">&lt;img*2&gt;</p>
                     <div class="certificate-img">
-                        <img src="./img/JS funda.png" alt="">
-                        <img src="./img/curriculum.png" alt="">
+                        <img src="./img/JSfunda.png" alt="jsfunda">
+                        <img src="./img/curriculum.png" alt="curriculum">
                     </div>
                 </div>
                 <p class="twoTab">&lt;/section&gt;</p>
@@ -546,28 +546,28 @@
                     <h3 class="fourTab contact">I'm Front-End Developer <span class="bold"> &lt;br&gt; </span><br>
                         who enjoying working with  <span class="bold"> &lt;br&gt; </span> <br>
                         JS HTML and CSS. <span class="bold"> &lt;br&gt; </span>  <br>
-                        However, if you have other request</span><br>
+                        However, if you have other request<br>
                         or question, don't hesitate to use<br>
                         the form bellow.  
                     </h3>
                     <p class="threTab"> &lt;/h3&gt;</p>
                     
                     <p class="threTab">&lt;form&gt;</p>
-                    <form class="form-style-4" action="" method="post">
-                        <label for="field1">
-                            <span>Enter Your Name</span><input type="text" name="field1" required="true" />
+                    <form class="form-style-4"  method="post">
+                        <label id="field1">
+                            <span>Enter Your Name</span><input type="text" name="field1" required />
                         </label>
-                        <label for="field2">
-                            <span>Email Address</span><input type="email" name="field2" required="true" />
+                        <label id="field2">
+                            <span>Email Address</span><input type="email" name="field2" required />
                         </label>
-                        <label for="field3">
-                            <span>Short Subject</span><input type="text" name="field3" required="true" />
+                        <label id="field3">
+                            <span>Short Subject</span><input type="text" name="field3" required />
                         </label>
-                        <label for="field4">
+                        <label id="field4">
                             <span>Message to Me</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
                         </label>
                         <label>
-                            <span> </span><input type="submit" value="Send" />
+                            <span> <input type="submit" value="Send" /></span>
                         </label>
                     </form>
                     <p class="threTab">&lt;/form&gt;</p>
@@ -579,7 +579,7 @@
             <p>&lt;/html&gt;</p>
         </section>
         <!--                                                                                        From here i start coding for web -->
-        <section id="webSources ">
+        <section id="webSources">
             <section id= 'bearID'  class= 'bear' onclick="showSkillsMenu()">
                 <img  src="./img/bear-21609.png" alt="bear is missing!!!!" >
 
@@ -599,8 +599,8 @@
             <section class="deerContactMe">
                 
             </section>
-            <section onclick = 'showCertificate()'id = 'eagleID' class="eagle">
-                <img id= 'eagleImgId' src="./img/Bald-Eagle-Transparent.png" alt="eagle missing">
+            <section onclick='showCertificate()'id='eagleID'class="eagle">
+                <img id='eagleImgId' src="./img/Bald-Eagle-Transparent.png" alt="eagle missing">
             </section>
             <section class="showCertificateOnWeb">
                
