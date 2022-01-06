@@ -439,7 +439,7 @@ mobileWrite.innerHTML = ` <img onclick="toTop()"  src="./img/Ak-logo.png" alt="l
     <p class="threTab">&lt;/h3&gt;</p>
     <p class="threTab">&lt;img*2&gt;</p>
     <div class="certificate-img">
-        <img src="./img/JS funda.png" alt="">
+        <img src="./img/JSfunda.png" alt="">
         <img src="./img/curriculum.png" alt="">
     </div>
 </div>
