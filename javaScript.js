@@ -338,388 +338,353 @@ const bearWrite = document.querySelector('.bearShowSskills');
 function showSkillsMenu(){
   bearWrite.innerHTML = `
   <div class= 'allSkills'> 
-                    <section id= 'skillsId' class="skills">
-                    <div class="header-skills">
-                        <p class = 'twoTab'>&lt;section&gt;</p>
-                        <p class = 'threTab'>&lt;h1&gt;</p>
-                        <h1 onclick = 'showDesigner()'  class = ' fourTab'>Multidisciplinary Designer</h1>
-                        <p class = 'threTab'>&lt;/h1&gt;</p>
-                        <p class = 'threTab'>&lt;section&gt;</p>
-                        <p class = 'fourTab'>&lt;div&gt;</p>
-                    </div>
-                    <div class="show-skill designerHide">
-                        <h5>Design</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class="fourTab">&lt;/div&gt;</p>
-                    </div>
-                    <div class="show-skill designerHide">
-                        <p class="fourTab">&lt;div&gt;</p>
-                        <h5 >Ilustration</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class="fourTab">&lt;/div&gt;</p>
-                    </div>
-                    <div class="show-skill designerHide">
-                        <p class="fourTab">&lt;div&gt;</p>
-                        <h5>Code</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class="fourTab">&lt;/div&gt;</p>
-                    </div>
-                    <div class="show-skill designerHide">
-                        <p class="fourTab">&lt;div&gt;</p>
-                        <h5>Animation</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="fourTab">&lt;/div&gt;</p>
-                    <p class="threTab">&lt;/section&gt;</p>
-                    </section>
-                    <section class="skills">
-                    <div class="header-skills">
-                        <p class="threTab">&lt;section&gt;</p>
-                        <p class = 'fourTab'>&lt;h1&gt;</p>
-                        <h1 onclick = 'showScript()' class = 'fourTab'>Scripting and Programming Language </h1>
-                        <p class = 'fourTab'>&lt;/h1&gt;</p>
-                        <p class= "fourTab">&lt;div&gt;</p>
-                    </div>
-                    <div class="show-skill showScriptSkills">
-                        <h5 class= 'Skill'>HTML</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                    </div>
-                    <p class= "fourTab">&lt;/div&gt;</p>
-                    <div class="show-skill showScriptSkills">
-                        <p class= "fourTab">&lt;div&gt;</p>
-                        <h5>CSS</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class= "fourTab">&lt;/div&gt;</p>
-                    </div>
-                    <div class="show-skill showScriptSkills">
-                        <p class= "fourTab">&lt;div&gt;</p>
-                        <h5>JS</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class= "fourTab">&lt;/div&gt;</p>
-                        <p class= 'threTab'>&lt;/section&gt;</p>
-                    </div>
-                    </section>
-                    <section class="skills">
-                    <div class="header-skills">
-                        <p class = 'threTab'>&lt;section&gt;</p>
-                        <p class = 'fourTab'>&lt;h1&gt;</p>
-                        <h1 onclick = 'showGraphic()' class = 'fourTab'>Graphic and Web Software </h1>
-                        <p class = 'fourTab'>&lt;/h1&gt;</p>
-                        <p class= "fourTab">&lt;div&gt;</p>
-                    </div>
-                    <div class="show-skill showGraphicSkills">
-                        <h5>Photoshop</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class= "fourTab">&lt;/div&gt;</p>
-                    </div>
-                    <div class="show-skill showGraphicSkills">
-                        <p class= "fourTab">&lt;div&gt;</p>
-                        <h5>Illustrator</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class= "fourTab">&lt;/div&gt;</p>
-                    </div>
-                    <div class="show-skill showGraphicSkills">
-                        <p class= "fourTab">&lt;div&gt;</p>
-                        <h5>Sketch</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class= "fourTab">&lt;/div&gt;</p>
-                    </div>
-                    <div class="show-skill showGraphicSkills">
-                        <p class= "fourTab">&lt;div&gt;</p>
-                        <h5>XD</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class= "fourTab">&lt;/div&gt;</p>
-                        <p class='threTab'>&lt;/section&gt;</p>
-                    </div>
-                    </section>
-                    <section class="skills">
-                    <div class="header-skills">
-                        <p class = 'threTab'>&lt;section&gt;</p>
-                        <p class = 'fourTab'>&lt;h1&gt;</p>
-                        <h1 onclick = 'showVideoSkills()' class = 'fourTab'>Video,3d and Game Software</h1>
-                        <p class = 'fourTab'>&lt;/h1&gt;</p>
-                        <p class= "fourTab">&lt;div&gt;</p>
-                    </div>
-                    <div class="show-skill videoSkills">
-                        <h5>After Effects</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class= "fourTab">&lt;/div&gt;</p>
-                    </div>
-                    <div class="show-skill videoSkills">
-                        <p class= "fourTab">&lt;div&gt;</p>
-                        <h5>Primiere-Pro</h5>
-                        <div class= 'skillsRow'>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Beginner</p>
-                            </div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Elementary</p></div>
-                            <div>
-                                <div class= 'rate'></div>
-                                <p>Intermediate</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Advanced</p>
-                            </div>
-                            <div>
-                                <div class="unRate"></div>
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <p class= "fourTab">&lt;/div&gt;</p>
-                        <p class="threTab">&lt;/section&gt;</p>
-                        <p class="twoTab">&lt;/section&gt;</p>
-                    </div>
-                    </section>
-                </div>
+    <section id= 'skillsId' class="skills">
+    <div class="header-skills">
+      <p class = 'threTab'>&lt;h1&gt;</p>
+      <h1 onclick = 'showDesigner()'  class = ' fourTab'>Multidisciplinary Designer</h1>
+      <p class = 'threTab'>&lt;/h1&gt;</p>
+    </div>
+    <div class="show-skill designerHide">
+        <h5>Design</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill designerHide">
+        <h5 >Ilustration</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill designerHide">
+        <h5>Code</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill designerHide">
+        <h5>Animation</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="skills">
+    <div class="header-skills">
+        <p class = 'fourTab'>&lt;h1&gt;</p>
+        <h1 onclick = 'showScript()' class = 'fourTab'>Scripting and Programming Language </h1>
+        <p class = 'fourTab'>&lt;/h1&gt;</p>
+    </div>
+    <div class="show-skill showScriptSkills">
+        <h5 class= 'Skill'>HTML</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill showScriptSkills">
+        <h5>CSS</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill showScriptSkills">
+        <h5>JS</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="skills">
+    <div class="header-skills">
+        <p class = 'fourTab'>&lt;h1&gt;</p>
+        <h1 onclick = 'showGraphic()' class = 'fourTab'>Graphic and Web Software </h1>
+        <p class = 'fourTab'>&lt;/h1&gt;</p>
+    </div>
+    <div class="show-skill showGraphicSkills">
+        <h5>Photoshop</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill showGraphicSkills">
+        <h5>Illustrator</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill showGraphicSkills">
+        <h5>Sketch</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill showGraphicSkills">
+        <h5>XD</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="skills">
+    <div class="header-skills">
+        <p class = 'fourTab'>&lt;h1&gt;</p>
+        <h1 onclick = 'showVideoSkills()' class = 'fourTab'>Video,3d and Game Software</h1>
+        <p class = 'fourTab'>&lt;/h1&gt;</p>
+    </div>
+    <div class="show-skill videoSkills">
+        <h5>After Effects</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-skill videoSkills">
+        <h5>Primiere-Pro</h5>
+        <div class= 'skillsRow'>
+            <div>
+                <div class= 'rate'></div>
+                <p>Beginner</p>
+            </div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Elementary</p></div>
+            <div>
+                <div class= 'rate'></div>
+                <p>Intermediate</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Advanced</p>
+            </div>
+            <div>
+                <div class="unRate"></div>
+                <p>Expert</p>
+            </div>
+        </div>
+    </div>
+  </section>
+</div>
   `;
   let arr = document.getElementsByClassName('bearShowSskills');
   let eagle = document.getElementById('eagleID');
   let webSection = document.getElementById('welcomeInfo');
+  
   let display;
   for(let i = 0 ; i<arr.length ; i++){
     display = arr[i].style.display;
@@ -734,6 +699,7 @@ function showSkillsMenu(){
       document.getElementById('LION').style.display = 'block';
       document.getElementById('deerID').style.display = 'block';
       eagle.style.display= 'block';
+      helloWorld();
     }
   }
 }
@@ -818,7 +784,7 @@ function showAboutMe(){
   let eagle = document.getElementById('eagleID');
   let deer = document.getElementById('deerImgId');
   let webSection = document.getElementById('welcomeInfo');
-  let display; 
+  let display;
 
   for(let i = 0; i<arr.length ; i++){
     display = arr[i].style.display;
@@ -866,28 +832,15 @@ function helloWorld(){
   <div class=" backgroundImg"></div>
     <h1 class="twoTab">Hi, <br> I'm Asen Krushkov</h1>
     <h3 class="twoTab">Front-End Developer</h3>
-    <a  href="#contactIdSection" class = ' myButton threTab button-opc' >Get in touch!</a>
+    <a  href="#contactIdSection" onclick = 'showContactMe()' class = ' myButton threTab button-opc' >Get in touch!</a>
   </section>
   <div class="background-nav"></div>
   <div class="navInfo">
-    <h2>{<span>bear:</span><span>"Skills",</span></h2>
-    <h2><span>lion:</span><span>"About Me",</span></h2>
-    <h2><span>deer:</span><span>"Contact",</span></h2>
-    <h2><span>eagle:</span><span>"Certificate"</span>}</h2>
+    <h2>{<span class = 'keys'>bear:</span><span class = 'var'>"Skills",</span></h2>
+    <h2><span class = 'keys'>lion:</span><span class = 'var'>"About Me",</span></h2>
+    <h2><span class = 'keys'>deer:</span><span class = 'var'>"Contact",</span></h2>
+    <h2><span class = 'keys'>eagle:</span><span class = 'var'>"Certificate"</span>}</h2>
   </div>
   
   `;
-}
-/* 
-window.onmousedown = onMouseDown;
-function onMouseDown(){
-  deerImg.style.display = 'block';
-  lionImg.style.display = 'block';
-  bearImg.style.display = 'block';
-  eagleImg.style.display = 'block';
-  home.style.display ='block';
-}*/
-//Add Alert so user know what to do!
-if(screen.width >960){
-  //alert('Use your left mouse click')
 }

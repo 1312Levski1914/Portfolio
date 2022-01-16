@@ -17,18 +17,18 @@ html{
   --button: #0b1338;
 }
 h5{
-  font-size: 20px;
+  font-size: 16px;
   color: var(--button);
   font-family: 'Fuzzy Bubbles', cursive;
 }
 h3{
-  font-size: 26px;
+  font-size: 20px;
   color: var(--h3);
   font-family: 'Fuzzy Bubbles', cursive;
   cursor: pointer;
 }
 h1{
-  font-size: 36px;
+  font-size: 20px;
   color: var(--primary-h1);
   font-family: 'Fuzzy Bubbles', cursive;
   cursor: pointer;
@@ -188,13 +188,13 @@ body{
   right: 20%;
   top: 40px;
 }
+.certificateSkillsFunda h3{
+  color: var(--button);
+}
 .JsFunda{
   position: relative;
   right: 50px;
   top: 50%;
-}
-.ertificate-imgc{
-  display: none;
 }
 .headingCertificate{
   display: flex;
@@ -204,6 +204,7 @@ body{
   position: relative;
   top: -40px;
 }
+
 .bold{
   font-family: 'Corinthia', cursive;
   color: var(--script);
@@ -310,10 +311,10 @@ nav img{
   margin: 15px;
 }
 .show-skill{
-  display: flex;
-  flex-direction: column;
   display: none;
-  margin: 10px;
+  margin: 5px;
+  width: 55%;
+  margin-left: 25%;
 }
 .show-skill h5{
   text-align: center;
@@ -361,12 +362,11 @@ nav img{
 	background-color:#0e33d4;
 }
 .images{
- display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
 }
 .images img{
-  width: 35%;
+  width: 50%;
   margin: auto;
   
 }
@@ -448,7 +448,15 @@ background: #394D61;
   display: none;
 }
 @media(min-width:600px){
-  
+  h5{
+    font-size: 16px;
+  }
+  h3{
+    font-size: 26px;
+  }
+  h1{
+    font-size: 36px;
+  }
   #mobileNav{
     display: none;
   }
@@ -471,7 +479,7 @@ background: #394D61;
   }
   .background-nav{
     background-color: var(--background);
-    opacity: 0.2;
+    opacity: 0.5;
     width: 100%;
     position: absolute;
     bottom: 0px;
@@ -485,6 +493,7 @@ background: #394D61;
     position: absolute;
     bottom: 0px;
     cursor: none;
+    text-shadow: 2px 2px var(--h3);
   }
   .navInfo span{
     padding: 8px;
@@ -661,6 +670,27 @@ background: #394D61;
   z-index: 10;
   margin-left: 15px;
   margin-top: 15px;
+  padding-top: 20px;
   overflow-y: scroll;
+ }
+ .header-skills{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header-skills :hover {
+  background-color: var(--script);
+  color: var(--h3);
+  padding: 10px;
+}
+ .keys{
+   color: var(--primary-h1);
+   font-size: 36px;
+ }
+ .var{
+   color: var(--button);
+   font-size: 36px;
+   border-color: var(--h3) 2px solid;
  }
 }
