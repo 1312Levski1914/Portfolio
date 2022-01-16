@@ -21,15 +21,12 @@ function openBurgerMenu() {
         }
     }
 }
-
-function adjust_textarea(h) {
-    h.style.height = "20px";
-    h.style.height = (h.scrollHeight)+"px";
-}
+// --------------------------------------------------------------------------------------------DARK MODE
 function darkMode(){
     let element = document.body;
     element.classList.toggle('root-dark');
 }
+//-------------------------------------------------------------------------------------------- Sound 
 var myAudio = document.getElementById("myAudio");
 var isPlaying = false;
 
@@ -43,10 +40,11 @@ myAudio.onplaying = function() {
 myAudio.onpause = function() {
   isPlaying = false;
 };
+//--------------------------------------------------------------------------------------------Scroll to the top
 function toTop(){
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-//
+//-----------------------------------------------------------------------------------Drob contact info
 function dropContact(){
   let arr1 = document.getElementsByClassName('dropContactInfo');
   let display;
@@ -60,6 +58,7 @@ function dropContact(){
     }
   }
 }
+//-------------------------------------------------------------------------------Show project content
 function dropProjects(){
   let arr1 = document.getElementsByClassName('showProjects');
   let display;
@@ -73,6 +72,7 @@ function dropProjects(){
     }
   }
 }
+//---------------------------------------------------------------------------show study content
 function showStudying(){
   let arr1 = document.getElementsByClassName('showStudyingInfo');
   let display;
@@ -86,6 +86,7 @@ function showStudying(){
     }
   }
 }
+//---------------------------------------------------------------------------show designer content
 function showDesigner(){
   let arr1 = document.getElementsByClassName('designerHide');
   let display;
@@ -99,6 +100,7 @@ function showDesigner(){
     }
   }
 }
+//---------------------------------------------------------------------------show scriptSkills
 function showScript(){
   let arr1 = document.getElementsByClassName('showScriptSkills');
   let display;
@@ -112,6 +114,7 @@ function showScript(){
     }
   }
 }
+//---------------------------------------------------------------------------show Graphic skills
 function showGraphic(){
   let arr1 = document.getElementsByClassName('showGraphicSkills');
   let display;
@@ -125,6 +128,7 @@ function showGraphic(){
     }
   }
 }
+//--------------------------------------------------------------------------- show certificate
 function showCertificate(){
   let arr1 = document.getElementsByClassName('certificateSkills');
   let display;
@@ -138,6 +142,7 @@ function showCertificate(){
     }
   }
 }
+//---------------------------------------------------------------------------Show about me
 function showAbout(){
   let arr1 = document.getElementsByClassName('showAboutInfo');
   let display;
@@ -151,6 +156,7 @@ function showAbout(){
     }
   }
 }
+// --------------------------------------------------------------------------- show video skills
 function showVideoSkills(){
   let arr1 = document.getElementsByClassName('videoSkills');
   let display;
@@ -164,7 +170,7 @@ function showVideoSkills(){
     }
   }
 }
-
+// --------------------------------------------------------------------------- show life content
 function showLife(){
   let arr = document.getElementsByClassName('LifeSection');
   let display;
@@ -178,6 +184,7 @@ function showLife(){
     }
   }
 }
+// --------------------------------------------------------------------------- show work content
 function showWork(){
   let arr = document.getElementsByClassName('showWorkInfo');
   let display;
@@ -193,31 +200,33 @@ function showWork(){
 }
 
 // Below is only functions about web screen 
+// i use javascript to write some HTML
+//instead of coppy the same content for web i decide to make function 
 const eagleWrite = document.querySelector('.showCertificateOnWeb');
 function showCertificate(){
-  eagleWrite.innerHTML = ` <section id= 'awardsId' class="certificate">
-  <p class="twoTab">&lt;section&gt;</p>
-  <p class="threTab">&lt;h1&gt;</p>
-  <h1 onclick = 'showCertificate()' class="sevenTab">Certificate</h1>
-  <p class="threTab">&lt;/h1&gt;</p>
-  <div class = 'certificateSkills'>
-      <p class="threTab">&lt;h3&gt;</p>
-      <h3 class="eightTab">Basic Skills</h3>
-      <p class="threTab">&lt;/h3&gt;</p>
-      <p class="threTab">&lt;img*2&gt;</p>
-      <div class="certificate-img">
-          <img src="./img/basic.png" alt="">
-          <img src="./img/basic2.png" alt="">
-      </div>
+  eagleWrite.innerHTML = ` 
+  <section id= 'awardsId' class="certificate">
+  <div class= 'headingCertificate'>
+    <p class="threTab">&lt;h1&gt;</p>
+    <h1 onclick = 'showCertificate()' class="sevenTab">Certificate</h1>
+    <p class="threTab">&lt;/h1&gt;</p>
   </div>
-  <div class = 'certificateSkills'>
+  <div class = 'certificateSkillsBasic'>
+      <p class="threTab">&lt;h3&gt;</p>
+      <h3 class="fourTab">Basic Skills JavaScript</h3>
+      <p class="threTab">&lt;/h3&gt;</p>
+  </div>
+  <div class="certificateImgContainer">
+    <img src="./img/basic.png" alt="basic is missing">
+    <img class= 'basic2' src="./img/basic2.png" alt="basic2 is missing">
+  </div>
+  <div class = 'certificateSkillsFunda'>
       <p class="threTab">&lt;h3&gt;</p>
       <h3>Fundamentals JavaScript</h3>
-      <p class="threTab">&lt;/h3&gt;</p>
-      <p class="threTab">&lt;img*2&gt;</p>
-      <div class="certificate-img">
-          <img src="./img/JS funda.png" alt="">
-          <img src="./img/curriculum.png" alt="">
+      <p>&lt;/h3&gt;</p>
+      <div class="certificateFundaImg">
+          <img class= 'JsFunda' src="./img/JSfunda.png" alt="JSFunda missing">
+          <img src="./img/curriculum.png" alt="Part Two of JS funda is missing">
       </div>
   </div>
   <p class="twoTab">&lt;/section&gt;</p>
@@ -227,8 +236,9 @@ function showCertificate(){
   let arr = document.getElementsByClassName('showCertificateOnWeb');
   let lion = document.getElementById('LION');
   let bear  = document.getElementById('bearID');
-  let eagle = document.getElementById('eagleID');
+  let eagle = document.getElementById('eagleImgId');
   let deer = document.getElementById('deerImgId');
+  let webSection = document.getElementById('welcomeInfo');
   let display; 
   for(let i = 0 ; i<arr.length ; i++){
     display = arr[i].style.display;
@@ -236,11 +246,15 @@ function showCertificate(){
       arr[i].style.display = 'block';
       bear.style.display = 'none';
       lion.style.display = 'none';
-      eagle.className = 'activeEagle'
+      eagle.style.top = '70%';
+      eagle.style.left = '80%';
       deer.style.display = 'none';
+      webSection.style.display = 'none';
     }else{
       arr[i].style.display = 'none';
       bear.style.display = 'block';
+      eagle.style.top ='13%';
+      eagle.style.left = '0%';
       lion.style.display = 'block';
       eagle.className = 'eagle';
       deer.style.display = 'block';
@@ -279,7 +293,7 @@ function showContactMe(){
                                 <span>Short Subject</span><input type="text" name="field3" required="true" />
                             </label>
                             <label for="field4">
-                                <span>Message to Me</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+                                <span>Message to Me</span><textarea name="field4" required="true"></textarea>
                             </label>
                             <label>
                                 <span> </span><input type="submit" value="Send" />
@@ -294,6 +308,7 @@ function showContactMe(){
   let bear  = document.getElementById('bearID');
   let eagle = document.getElementById('eagleID');
   let deer = document.getElementById('deerImgId');
+  let webSection = document.getElementById('welcomeInfo');
   let display; 
   for(let i = 0 ; i<arr.length ; i++){
     display = arr[i].style.display;
@@ -305,13 +320,16 @@ function showContactMe(){
           bear.style.display = 'none';
           lion.style.display = 'none';
           eagle.style.display = 'none';
-          deer.className = 'activeDeer';
+          deer.style.left = '75%';
+          deer.style.top = '70%';
+          webSection.style.display = 'none';
         }else{
           arr[i].style.display = 'none';
           bear.style.display = 'block';
           lion.style.display = 'block';
           eagle.style.display = 'block';
-          deer.className = 'deer';
+          deer.style.top = '80%';
+          deer.style.left = '8%';
         }
       }
     }
@@ -698,9 +716,10 @@ function showSkillsMenu(){
                     </div>
                     </section>
                 </div>
-  `
+  `;
   let arr = document.getElementsByClassName('bearShowSskills');
   let eagle = document.getElementById('eagleID');
+  let webSection = document.getElementById('welcomeInfo');
   let display;
   for(let i = 0 ; i<arr.length ; i++){
     display = arr[i].style.display;
@@ -709,6 +728,7 @@ function showSkillsMenu(){
       document.getElementById('LION').style.display = 'none';
       document.getElementById('deerID').style.display = 'none';
       eagle.style.display = 'none';
+      webSection.style.display = 'none';
     }else{
       arr[i].style.display = 'none';
       document.getElementById('LION').style.display = 'block';
@@ -793,27 +813,81 @@ function showAboutMe(){
                 </section>
   `
   let arr = document.getElementsByClassName('lionAboutMe');
-  let lion = document.getElementById('LION');
+  let lion = document.getElementById('LionActive');
   let bear  = document.getElementById('bearID');
   let eagle = document.getElementById('eagleID');
   let deer = document.getElementById('deerImgId');
+  let webSection = document.getElementById('welcomeInfo');
   let display; 
 
   for(let i = 0; i<arr.length ; i++){
     display = arr[i].style.display;
     if(display !== 'block'){
       arr[i].style.display = 'block';
-      lion.className = 'openLion';
+      lion.style.top = '70%';
+      lion.style.right = '5%';
+      lion.style.width = '280px';
+      lion.style.height = '230px';
       bear.style.display = 'none';
       document.getElementById('deerID').style.display = 'none';
       eagle.style.display = 'none';
-
+      webSection.style.display = 'none';
     }else{
       arr[i].style.display = 'none';
-      lion.className = 'lion';
+      lion.style.top = '55%';
+      lion.style.right = '48%';
+      lion.style.width = '100px';
+      lion.style.height = '130px';
       bear.style.display=  'block';
       document.getElementById('deerID').style.display = 'block';
       eagle.style.display = 'block';
     }
   }
+}
+
+//On mouse click show animal + info 
+/* 
+
+let bearImg  = document.getElementById('bearImg');
+let eagleImg = document.getElementById('eagleImgId');
+let deerImg = document.getElementById('deerImgId');
+  deerImg.style.display = 'none';
+  lionImg.style.display = 'none';
+  bearImg.style.display = 'none';
+  eagleImg.style.display = 'none';
+  
+*/
+let lionImg = document.getElementById('LionActive');
+window.onload = helloWorld;
+function helloWorld(){
+  let webSection = document.getElementById('welcomeInfo');
+  webSection.innerHTML = `
+  <section class="infoForWeb">
+  <div class=" backgroundImg"></div>
+    <h1 class="twoTab">Hi, <br> I'm Asen Krushkov</h1>
+    <h3 class="twoTab">Front-End Developer</h3>
+    <a  href="#contactIdSection" class = ' myButton threTab button-opc' >Get in touch!</a>
+  </section>
+  <div class="background-nav"></div>
+  <div class="navInfo">
+    <h2>{<span>bear:</span><span>"Skills",</span></h2>
+    <h2><span>lion:</span><span>"About Me",</span></h2>
+    <h2><span>deer:</span><span>"Contact",</span></h2>
+    <h2><span>eagle:</span><span>"Certificate"</span>}</h2>
+  </div>
+  
+  `;
+}
+/* 
+window.onmousedown = onMouseDown;
+function onMouseDown(){
+  deerImg.style.display = 'block';
+  lionImg.style.display = 'block';
+  bearImg.style.display = 'block';
+  eagleImg.style.display = 'block';
+  home.style.display ='block';
+}*/
+//Add Alert so user know what to do!
+if(screen.width >960){
+  //alert('Use your left mouse click')
 }

@@ -10,23 +10,22 @@
         <meta name="keywords" content="web design blog,web dev blog,portfolio, Front-End,">
     <!--Done!-->
     <!--Style !-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Make text responsive for mobile and screen-->
     <!--End-->
-        </head>
+    </head>
     <body>
         <nav>
             <section id="mobileNav">
                 <img onclick="toTop()"  src="./img/Ak-logo.png" alt="logo-not-working">
                 <div class="sound">
-                    <audio id="myAudio" src="./portfolioBackgroundSound.m4a" preload="auto">
-                    </audio>
+                    <audio id="myAudio" src="./portfolioBackgroundSound.m4a" preload="auto"></audio>
                     <p>sound</p>
                     <input onClick="togglePlay()" type="checkbox"  id="checkbox">
                 </div>
@@ -49,7 +48,7 @@
             </section>
         </nav>
         <main>
-        <section id="mobileFirst" class= 'JsWrite' >
+        <section id="mobileFirst">
             <section class="home">
                 <p>&lt;html&gt;</p>
                 <p class = 'oneTab'>&lt;body&gt;</p>
@@ -284,7 +283,8 @@
                         </div>
                         <div>
                             <div class= 'rate'></div>
-                            <p>Elementary</p></div>
+                            <p>Elementary</p>
+                        </div>
                         <div>
                             <div class= 'rate'></div>
                             <p>Intermediate</p>
@@ -336,7 +336,8 @@
                         </div>
                         <div>
                             <div class= 'rate'></div>
-                            <p>Elementary</p></div>
+                            <p>Elementary</p>
+                        </div>
                         <div>
                             <div class= 'rate'></div>
                             <p>Intermediate</p>
@@ -397,7 +398,8 @@
                         </div>
                         <div>
                             <div class= 'rate'></div>
-                            <p>Elementary</p></div>
+                            <p>Elementary</p>
+                        </div>
                         <div>
                             <div class= 'rate'></div>
                             <p>Intermediate</p>
@@ -442,40 +444,12 @@
                     <p class="twoTab">&lt;/section&gt;</p>
                 </div>
             </section>
-            <section id= 'awardsId' class="certificate">
-                <p class="twoTab">&lt;section&gt;</p>
-                <p class="threTab">&lt;h1&gt;</p>
-                <h1 onclick = 'showCertificate()' class="sevenTab">Certificate</h1>
-                <p class="threTab">&lt;/h1&gt;</p>
-                <div class = 'certificateSkills'>
-                    <p class="threTab">&lt;h3&gt;</p>
-                    <h3 class="eightTab">Basic Skills</h3>
-                    <p class="threTab">&lt;/h3&gt;</p>
-                    <p class="threTab">&lt;img*2&gt;</p>
-                    <div class="certificate-img">
-                        <img src="./img/basic.png" alt="basic">
-                        <img src="./img/basic2.png" alt="curriculum">
-                    </div>
-                </div>
-                <div class = 'certificateSkills'>
-                    <p class="threTab">&lt;h3&gt;</p>
-                    <h3>Fundamentals JavaScript</h3>
-                    <p class="threTab">&lt;/h3&gt;</p>
-                    <p class="threTab">&lt;img*2&gt;</p>
-                    <div class="certificate-img">
-                        <img src="./img/JSfunda.png" alt="jsfunda">
-                        <img src="./img/curriculum.png" alt="curriculum">
-                    </div>
-                </div>
-                <p class="twoTab">&lt;/section&gt;</p>
-            </section>
             <section id= 'aboutMe'>
                 <p class="twoTab">&lt;section&gt;</p>
                 <p class="threTab">&lt;h1&gt;</p>
                 <h1 onclick = 'showAbout()' class="eightTab">About Me</h1>
                 <p class="threTab">&lt;/h1&gt;</p>
                 <div class="showAboutInfo">
-
                     <p class="threTab">&lt;h3&gt;</p>
                     <h3 onclick= 'showLife()' class="eightTab">Life</h3>
                     <p class="threTab">&lt;/h3&gt; &lt;hr&gt;</p> <hr>
@@ -515,9 +489,8 @@
                         <p class="threTab">&lt;/h5&gt;</p>
                         <p class="twoTab">&lt;/section&gt;</p>
                     </div>
-                </div>
-                
-                </section>
+                </div>  
+            </section>
                 <!--                                                                                        Here Start everything about my Projects-->
             <section id="Project" class="projects">
                 <p class="twoTab">&lt;section&gt;</p>
@@ -541,7 +514,6 @@
                 <h1 onclick = 'dropContact()' class="sevenTab">Contact Me</h1>
                 <p class="threTab">&lt;/h1&gt;</p>
                 <div class="hide dropContactInfo">
-
                     <p class="threTab">&lt;h3&gt;</p>
                     <h3 class="fourTab contact">I'm Front-End Developer <span class="bold"> &lt;br&gt; </span><br>
                         who enjoying working with  <span class="bold"> &lt;br&gt; </span> <br>
@@ -564,7 +536,7 @@
                             <span>Short Subject</span><input type="text" name="field3" required />
                         </label>
                         <label id="field4">
-                            <span>Message to Me</span><textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+                            <span>Message to Me</span><textarea name="field4"required="true"></textarea>
                         </label>
                         <label>
                             <span> <input type="submit" value="Send" /></span>
@@ -573,41 +545,59 @@
                     <p class="threTab">&lt;/form&gt;</p>
                 </div>
             </section>
+                <p class="threTab">&lt;/section&gt;</p>
                 <p class="twoTab">&lt;/section&gt;</p>
-                <p class="oneTab">&lt;/section&gt;</p>
-            <p>&lt;/body&gt;</p>
+            <p class='oneTab'>&lt;/body&gt;</p>
             <p>&lt;/html&gt;</p>
         </section>
+        <section id='webSources'>
+            <section id='welcomeInfo'></section>
+            <div class="zoo">
+                <div class="animal-box">
+                    <section id= 'bearID' onclick="showSkillsMenu()">
+                        <img id = 'bearImg' src="./img/bear-21609.png" alt="bear is missing!!!!" >
+                    </section>
+                    <section class="bearShowSskills"></section>
+                    
+                    <section onclick="showAboutMe()" id='LION'>
+                        <img id="LionActive" src="./img/lion.png" alt="Lion is missing">
+                    </section>
+                    <section class="lionAboutMe"></section>
+                    
+                    <section onclick="showContactMe()" id='deerID'>
+                        <img id='deerImgId' src="./img/Deer-Download-PNG.png" alt="deer is mission">
+                    </section>
+                    <section class="deerContactMe"></section>
+                    
+                    <section onclick='showCertificate()'id='eagleID'>
+                        <img id='eagleImgId' src="./img/Bald-Eagle-Transparent.png" alt="eagle missing">
+                    </section>
+                    <section class="showCertificateOnWeb"></section>
+                </div>
+            </div>
+        </section>
         <!--                                                                                        From here i start coding for web -->
-        <section id="webSources">
+        <!-- <section id="webSources">
             <section id= 'bearID'  class= 'bear' onclick="showSkillsMenu()">
-                <img  src="./img/bear-21609.png" alt="bear is missing!!!!" >
-
+                <img id = 'bearImg' src="./img/bear-21609.png" alt="bear is missing!!!!" >
             </section>
-            <section class="bearShowSskills">
-                
-            </section>
+            <section class="bearShowSskills"></section>
             <section onclick="showAboutMe()" id='LION' class="lion">
                 <img id="LionActive" src="./img/lion.png" alt="Lion is missing">
             </section>
-            <section class="lionAboutMe">
-                
-            </section>
+            <section class="lionAboutMe"></section>
             <section onclick="showContactMe()" id='deerID' class="deer">
                 <img id='deerImgId' src="./img/Deer-Download-PNG.png" alt="deer is mission">
             </section>
-            <section class="deerContactMe">
-                
-            </section>
+            <section class="deerContactMe"></section>
             <section onclick='showCertificate()'id='eagleID'class="eagle">
                 <img id='eagleImgId' src="./img/Bald-Eagle-Transparent.png" alt="eagle missing">
             </section>
-            <section class="showCertificateOnWeb">
-               
+            <section class="showCertificateOnWeb"></section>
+            <section id='welcomeInfo'>
             </section>
-        </section>
+        </section> -->
         </main>
-        <script src="./javaScript.js"></script>
-        
+    <script src="./javaScript.js"></script>
     </body>
 </html>

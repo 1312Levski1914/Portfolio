@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 :root{
   --primary-h1 : #1E3887;
@@ -13,7 +14,7 @@ html{
   --h3: #1E3887  ;
   --background: #1D1A05;
   --script: #DAFFED;
-  --button: #2B9720;
+  --button: #0b1338;
 }
 h5{
   font-size: 20px;
@@ -152,11 +153,56 @@ body{
   margin: 0px;
   margin-top: 140px;
 }
-.certificate-img{
+.certificateSkillsBasic{
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  top: -50px;
 }
-.certificate-img img{
-  width: 50%;
+.certificateSkillsBasic h3{
+  color: var(--button);
+}
+.certificateImgContainer{
+  display: flex;
+  
+}
+.certificateImgContainer img{
+  margin-left: 3%;
+}
+.basic2{
+  position: relative;
+  left: 20%;
+}
+.certificateSkillsFunda{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  
+}
+.certificateFundaImg{
+  display: flex;
+  position: relative;
+  right: 20%;
+  top: 40px;
+}
+.JsFunda{
+  position: relative;
+  right: 50px;
+  top: 50%;
+}
+.ertificate-imgc{
+  display: none;
+}
+.headingCertificate{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -40px;
 }
 .bold{
   font-family: 'Corinthia', cursive;
@@ -256,6 +302,7 @@ nav img{
   display: flex;
   flex-direction: column; 
 }
+
 .skillsRow{
   display: flex;
   flex-direction: row;
@@ -310,7 +357,7 @@ nav img{
   left: 20%;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #11e470 5%, #035030 100%);
+	background:linear-gradient(to bottom, var(--button) 5%, var(--background) 100%);
 	background-color:#0e33d4;
 }
 .images{
@@ -418,26 +465,163 @@ background: #394D61;
     display: block;
   }
   body{
-      background-image:url(./img/pirin.jpg);
-      background-size: 100vw 100vh;
-      background-repeat: no-repeat;
+    background-image:url(./img/pirin.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
   }
-  #bearID img{
-   width: 350px;
-   position: fixed;
-   right: 0px;
-   bottom: 110px;
+  .background-nav{
+    background-color: var(--background);
+    opacity: 0.2;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 70px;
+  }
+  .navInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    cursor: none;
+  }
+  .navInfo span{
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+  .infoForWeb{
+    width: 550px;
+    height: 250px;
+    position: relative;
+    left: 23%;
+    top: -40px;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .button-opc{
+    opacity: 0.8;
+  }
+  .animal-box{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  .animal-box img{
+    height: 200px;
+    position: absolute;
+  }
+  #bearImg{
+    right: 9%;
+    top: 76%;
+    transform: translateY(-50%);
+    width: 230px;
+    height: 180px;
+    animation: bearAnimation 3s linear ;
+  }
+  .bearRun{
+    animation: bearAfterClick 3s linear;
+  }
+  @keyframes bearAnimation{
+    0%{
+      opacity: 0;
+      right: -30%;
+      width: 130px;
+      height: 150px;
+      
+    }
+    100%{
+      opacity: 1;
+      top: 76%;
+      right: 9%;
+      width: 230px;
+      height: 180px;
+    }
+  }
+  @keyframes bearAfterClick{
+    0%{
+      top: 76%;
+      right: 9%;
+    }
+    100%{
+      top:50%;
+      right: 30%;
+    }
+  }
+  #LionActive{
+    display: block;
+    right: 48%;
+    top: 55%;
+    width: 100px;
+    height: 130px;
+    transform: translateY(-50%);
+    animation: AnimationLion 3s linear ;
+  }
+  @keyframes AnimationLion {
+    0%{
+      opacity: 0;
+      right: 40%;
+      top: 48%;
+      width: 0px;
+      height: 0px;
+    }
+    100%{
+      opacity: 1;
+      right: 48%;
+      top: 55%;
+      width: 100px;
+      height: 130px;
+    }
+  }
+  #deerImgId{
+    display: block;
+    left: 8%;
+    top: 80%;
+    transform: translateY(-50%);
+    animation: deerAnimation 3s linear;
+  }
+  @keyframes deerAnimation{
+    0%{
+      opacity: 0;
+      left: 50%;
+    }
+    100%{
+      opacity: 1;
+      left: 8%;
+    }
+  }
+  #eagleImgId{
+    display: block;
+    top: 13%;
+    transform: translateY(-50%);
+    animation: eagleAnimation 3s linear;
+  }
+  @keyframes eagleAnimation{
+    0%{
+      opacity: 0;
+      left: 100%;
+      top: -10%;
+    }
+    50%{
+      left: 30%;
+      top: 33%;
+    }
+    100%{
+      top: 13%;
+      left: 0%;
+    }
   }
   .bearShowSskills{
     display: none;
     width: 70%;
-    height: 500px;
+    height: 80%;
     background-color: var(--background);
-   z-index: 10;
-   margin-left: 15px;
-  }
-  #LION img{
-    width: 100px;
+    z-index: 10;
+    margin-left: 15px;
+    margin-top: 15px;
   }
   .allSkills{
     overflow-y: scroll;
@@ -446,84 +630,37 @@ background: #394D61;
   .lionAboutMe{
     display: none;
     width: 70%;
-    height: 500px;
+    height: 80%;
     background-color: var(--background);
     z-index: 10;
     margin-left: 15px;
+    margin-top: 15px;
     overflow-y: scroll;
-    max-height: 500px;
-  }
-  .lion{
-    position: fixed;
-    left: 46%;
-    top: 48%;
-    width: 3%;
   }
   .openLion{
-    position: fixed;
-    right: 50px;
-    bottom: 120px;
-    
-  }
-  .lion img{
-    width: 100%;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
   }
   .deerContactMe{
     display: none;
     width: 70%;
-    height: 500px;
+    height: 80%;
     background-color: var(--background);
     z-index: 10;
     margin-left: 15px;
     overflow-y: scroll;
-    max-height: 500px;
+    margin-left: 15px;
+    margin-top: 15px;
   }
-  .activeDeer{
-    position: fixed;
-    right: 20px;
-    bottom: 120px;
-  }
-  .deer{
-    position: absolute;
-    bottom: 8%;
-    left: 10%;
-  }
-  deer img{
-    width: 100%;
-  }
-  .eagle{
-      position: absolute;
-      width: 5%;
-  }
-  .eagle img{
-      width: 100%;
-  }
- .activeEagle{
-   position: fixed;
-   right: 0px;
-   top: 0px;
- }
  .showCertificateOnWeb{
   display: none;
   width: 70%;
-  height: 500px;
+  height: 80%;
   background-color: var(--background);
   z-index: 10;
   margin-left: 15px;
+  margin-top: 15px;
   overflow-y: scroll;
-  max-height: 500px;
  }
- 
-#bearID{
-  display: block;
-}
-#LionActive{
-  display: block;
-}
-.deerImgId{
-  display: block;
-}
-#eagleImgId{
-  display: block;
-}
 }
